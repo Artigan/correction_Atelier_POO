@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Atelier POO</title>
+        <!-- Boostrap 4 CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Atelier POO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+            
+    <div class="container text-center">
+        <h1 class="title">Ouvre ta console pour voir ce que renvoient les methodes des classes véhicule, car et moto</h1>
+    </div>
+
+    <script src="vehicule.js"></script>
+    <script src="car.js"></script>
+    <script src="moto.js"></script>
+    <script>
+        const voiture = new Vehicule("peugeot", "307");
+        voiture.getBrandModel(); 
+    
+        const car = new Car("bmw", "z3", "voirure");
+        car.getBrandModel();
+        
+        const moto = new Moto("Yamaha", "Chappy", "moto");
+        moto.getBrandModel();
+    </script>
+ 
+</body>
+</html>
